@@ -33,7 +33,7 @@ svg{
 	color: white;
 	display: inline-block;
 }
-.txt{
+.text{
 	color: white;
 }
 
@@ -63,4 +63,14 @@ svg{
 }
 .logo2 {
 	color: white;
+}
+
+
+#basic{
+
+	display: grid;
+	height: 100%;
+	grid-template-rows: 200em 20em;
+
+	
 }
