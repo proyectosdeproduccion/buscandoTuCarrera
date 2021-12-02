@@ -193,7 +193,9 @@ nav{
 #video{
     position: absolute;
     box-shadow: 5px 5px 10px #555;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
+    height: 700px;
+    width: 1200px;
 }
