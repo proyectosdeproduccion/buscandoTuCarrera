@@ -85,7 +85,8 @@ nav{
 .info{
     position: absolute;
     height: 190px;
-    width: 0;
+    width: 100%;
+    left: -100%;
     background-color: #EEE6FF;
     z-index: -10;
     top: 80px;
@@ -95,7 +96,7 @@ nav{
 }
 .info.active{
     opacity: 1;
-    width: 100%;
+    left: 0;
 }
 .flex-info{
     display: flex;
@@ -130,7 +131,8 @@ nav{
 .cursos{
     position: absolute;
     height: 190px;
-    width: 0;
+    width: 100%;
+    left: -100%;
     background-color: #EEE6FF;
     z-index: -10;
     top: 80px;
@@ -140,7 +142,7 @@ nav{
 }
 .cursos.activec{
     opacity: 1;
-    width: 100%;
+    left: 0;
 }
 .flex-curso{
     display: flex;
