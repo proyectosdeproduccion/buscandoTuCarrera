@@ -5,9 +5,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: sans-serif;
+
 }
 body{   
-    background: linear-gradient(135deg, #02FCE0, #22659D,#61A272,#335D9E, #56A847);
+    background: linear-gradient(135deg, #C8EBB7, #A6BFFF,#C1F7AC,#49e, #56A847);
     color:  #fff;
 }
 nav{
@@ -185,6 +186,7 @@ nav{
     animation-name: animacion;
     animation-duration: .5s;
     font-family: 'Domine', serif; 
+    color: #555; 
 }
 .parrafo{
 	letter-spacing: 2px;
@@ -194,6 +196,7 @@ nav{
     animation-duration: .9s;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
+    color: #555;
 }
 .list{
     margin-left: 10px;
@@ -335,6 +338,7 @@ nav{
     background-color: rgba(255,255,255,.2);
     box-shadow: 0 0 10px #ddd;
     margin-top: 20px;
+    color: #555;
 }
 .cajas h3{
     margin-top: 5px;
@@ -348,6 +352,7 @@ nav{
     background-color: rgba(255,255,255,.2);
     box-shadow: 0 0 10px #ddd;
     margin-top: 20px;
+    color: #555;
 }
 .cajas-i-container{
     margin-top: 20px;
