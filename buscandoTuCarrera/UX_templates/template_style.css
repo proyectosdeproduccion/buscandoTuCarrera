@@ -1,0 +1,39 @@
+h1 {
+  font-weight: 100;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-size: 100px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h3 {
+  text-align: center;
+  width: 100px;
+}
+h2 {
+  text-align: left;
+  font-weight: 40;
+  font-size: 50px;
+}
+
+.icons {
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.images_icons {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.sub_icons {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
