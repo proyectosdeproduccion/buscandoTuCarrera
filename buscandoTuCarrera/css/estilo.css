@@ -207,22 +207,14 @@ nav{
     100%{margin-left: -300%;}
 }
 /*-----------------------------------------------------Footer------------------------------------------*/
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #F2E6F8;
-}
+
 .footer-container{
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: 20px;
 }
-.footer-logo{
-    height: 65px;
-    width: 80px;
-}
+
 h5{
     font-weight: 100;
     letter-spacing: 1px;
@@ -291,8 +283,9 @@ h5{
     font-size: 14px;
 }
 .cursos{
-    height: 180px
+    height: 180px;
 }
+
 .curso-a{
     width: 300px;
     height: 150px;
@@ -300,3 +293,4 @@ h5{
 }
 
 
+}

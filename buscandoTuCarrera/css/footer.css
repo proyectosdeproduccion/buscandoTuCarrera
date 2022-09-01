@@ -76,3 +76,15 @@ svg{
 
 	
 }
+
+.footer-logo{
+    height: 65px;
+    width: 80px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c070e8;
+}

@@ -17,6 +17,9 @@ h2 {
   font-weight: 40;
   font-size: 50px;
 }
+p {
+  font-size: 30px;
+}
 
 .icons {
   display: flex;
