@@ -1,0 +1,13 @@
+.main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+.facultad_fila {
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
