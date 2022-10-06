@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/footerHeader.css">
     <link rel="stylesheet" href="template_facultades.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>template carrera</title>
 </head>
 <body>
+
     <nav>
         <div class="lista">
             <a href="index.html"><img src="logo.png" class="logo"></a>
@@ -40,15 +42,23 @@
                 <a href="info-carreras/carrerasTecnologicas.html" class="curso-a">Tecnología</a>
             </div>
         </div>
-      </nav>
+    </nav>
     <div class="main">
-        <a href="https://www.msn.com/es-ar/deportes/other/sorprendi%C3%B3-a-todos-guardiola-y-una-contundente-decisi%C3%B3n-con-juli%C3%A1n-%C3%A1lvarez/ar-AA12DvFw?ocid=msedgntp&cvid=5a01ccf9a20e4bd8a1d36ab215719b3a"><img src="imagenesFacultades/contadorPublicoUADE.jpg" / class="facuImg"></a>
-        <a href=""><img src="imagenesFacultades/contadorPublicoBelgrano.jpg" / class="facuImg"></a>
-        <a href=""><img src="imagenesFacultades/contadorPublicoPalermo.jpg" / class="facuImg"></a>
-        <a href=""><img src="imagenesFacultades/contadorPublicoKennedy.jpg" / class="facuImg"></a>
+        <div data-aos="fade-right">
+            <a href=""><img src="imagenesFacultades/contadorPublicoUADE.jpg" / class="facuImg"></a>
+        </div>
+        <div data-aos="fade-left">
+            <a href=""><img src="imagenesFacultades/contadorPublicoBelgrano.jpg" / class="facuImg"></a>
+        </div>
+        <div data-aos="fade-right">
+            <a href=""><img src="imagenesFacultades/contadorPublicoPalermo.jpg" / class="facuImg"></a>
+        </div>
+        <div data-aos="fade-left">
+            <a href=""><img src="imagenesFacultades/contadorPublicoKennedy.jpg" / class="facuImg"></a>
+        </div>
     </div>
 
-      <footer>
+    <footer>
         <div class="footer-container">
             <a href="#"><img src="logo.png" class="footer-logo"></a>
             <h5>"Proyectos de Producción" 5ºB 2022 - CEAES</h5>
@@ -67,6 +77,10 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
