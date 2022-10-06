@@ -6,8 +6,14 @@
     
 }
 .facultad_fila {
-    background-color: red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+}
+.facuImg {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 50rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
