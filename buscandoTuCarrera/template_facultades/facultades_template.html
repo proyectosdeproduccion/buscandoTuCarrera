@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="../css/footerHeader.css">
     <link rel="stylesheet" href="template_facultades.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>template carrera</title>
+    <script src="https://kit.fontawesome.com/319c596c7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>template facultades</title>
 </head>
 <body>
 
-    <nav>
-        <div class="lista">
-            <a href="index.html"><img src="logo.png" class="logo"></a>
-            <ul>
-                <li><a href="#" id="carreras">Carreras</a></li>
-                <li><a href="#" id="curso">Cursos</a></li>
-                <li><a href="Charlas/charlas.html">Charlas y entrevistas</a></li>
-                <li><a href="Nosotros/nosotros.html">Nosotros</a></li>
-            </ul>
+  <nav>
+    <div class="lista">
+        <a href="index.html"><img src="../imagenes/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#" id="carreras">Carreras</a></li>
+            <li><a href="#" id="curso">Cursos</a></li>
+            <li><a href="Charlas/charlas.html">Charlas y entrevistas</a></li>
+            <li><a href="Nosotros/nosotros.html">Nosotros</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Buscar">
+        <span class="buscar">Buscar</span>
+    </div>
+    <div class="info">
+        <div class="flex-info">
+            <a href="pag2/pagina2.html" target="BLANK" class="areas">Arquitectura y Diseño</a>
+            <a href="pag3/pag3.html" target="BLANK" class="areas">Ciencias Económicas</a>
+            <a href="pag4/pag4.html" target="BLANK" class="areas">Comunicación y Arte</a>
+            <a href="pag5/pag5.html" target="BLANK" class="areas">Ingeniería y Ciencias exactas</a>
+            <a href="pag7/pag7.html" target="BLANK" class="areas">Ciencias Jurídicas y Sociales</a>
+            <a href="pag8/pag8.html" target="BLANK" class="areas">Ciencias de la Salud y Ambientales</a>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar">
-            <span class="buscar">Buscar</span>
+    </div>
+    <div class="cursos">
+        <div class="flex-curso">
+            <a href="info-carreras/cursos.html" class="curso-a">Cursos del GBA</a>
+            <a href="info-carreras/gastronomia.html" class="curso-a">Gastronomía</a>
+            <a href="info-carreras/carrerasTecnologicas.html" class="curso-a">Tecnología</a>
         </div>
-        <div class="info">
-            <div class="flex-info">
-                <a href="pag2/pagina2.html" target="BLANK" class="areas">Arquitectura y Diseño</a>
-                <a href="pag3/pag3.html" target="BLANK" class="areas">Ciencias Económicas</a>
-                <a href="pag4/pag4.html" target="BLANK" class="areas">Comunicación y Arte</a>
-                <a href="pag5/pag5.html" target="BLANK" class="areas">Ingeniería y Ciencias exactas</a>
-                <a href="pag7/pag7.html" target="BLANK" class="areas">Ciencias Jurídicas y Sociales</a>
-                <a href="pag8/pag8.html" target="BLANK" class="areas">Ciencias de la Salud y Ambientales</a>
-            </div>
-        </div>
-        <div class="cursos">
-            <div class="flex-curso">
-                <a href="info-carreras/cursos.html" class="curso-a">Cursos del GBA</a>
-                <a href="info-carreras/gastronomia.html" class="curso-a">Gastronomía</a>
-                <a href="info-carreras/carrerasTecnologicas.html" class="curso-a">Tecnología</a>
-            </div>
-        </div>
-    </nav>
+    </div>
+  </nav>
     <div class="main">
+        <div class="titulo">
+          <h1>Aqui encontraras las principales universidades donde  podras estudiar <b>contador publico</b> o estudios similares.</h1>
+        </div>
+        <img src="../imagenes/flechaAbajo.png" alt="" class="flecha">
         <div data-aos="fade-right">
             <a href=""><img src="imagenesFacultades/contadorPublicoUADE.jpg" / class="facuImg"></a>
         </div>
@@ -60,7 +68,7 @@
 
     <footer>
         <div class="footer-container">
-            <a href="#"><img src="logo.png" class="footer-logo"></a>
+            <a href="#"><img src="../imagenes/logo.png" class="footer-logo"></a>
             <h5>"Proyectos de Producción" 5ºB 2022 - CEAES</h5>
         </div>
         <div class="sc-container">
@@ -77,7 +85,8 @@
             </div>
         </div>
     </footer>
-<script src="index.js"></script>
+
+<script src="../index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
