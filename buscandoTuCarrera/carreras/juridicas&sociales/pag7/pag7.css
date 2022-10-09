@@ -1,69 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
 *{
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-.footer-logo{
-    height: 65px;
-    width: 80px;
-}
-
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #c070e8;
-}
-
-.footer-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 20px;
-}
-
-h5{
-    font-weight: 100;
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-.sc-container{
-    margin-right: 100px;
-}
-.mail{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-    margin-top: 6px;
-    letter-spacing: 1px;
-}
-.mail a{
-    letter-spacing: 1px;
-}
-.sc{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: rgb(128, 126, 255);
-}
-
-/*-----------header-----------*/
 nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     position: relative;
-    background-color: #F2E6F8;
+    background-color: #F2E6F8; 
     height: 80px;
     z-index: 100;
     box-shadow: 0 8px 10px #444;
+}
+.logo{
+    width: 90px;
+    height: 70px;
+    margin-left: 20px;
 }
 .lista{
     display: flex;
@@ -81,7 +40,7 @@ nav{
     letter-spacing: 1px;
     font-size: 18px;
     position: relative;
-
+    
 }
 .lista ul li a::before{
     content: '';
@@ -98,11 +57,6 @@ nav{
 }
 .lista ul li a:hover::before{
     width: 100%;
-}
-.logo{
-    width: 65px;
-    height: 45px;
-    margin-left: 10px;
 }
 .search{
     display: flex;
@@ -131,11 +85,11 @@ nav{
     background-color: #D6BEF5;
     border: 2px solid #D6BEF5;
 }
+/*----------------------------------------------------Info----------------------------------------*/
 .info{
     position: absolute;
     height: 190px;
-    width: 100%;
-    left: -100%;
+    width: 0;
     background-color: #EEE6FF;
     z-index: -10;
     top: 80px;
@@ -145,7 +99,7 @@ nav{
 }
 .info.active{
     opacity: 1;
-    left: 0;
+    width: 100%;
 }
 .flex-info{
     display: flex;
@@ -176,11 +130,11 @@ nav{
     background-color: #F6F2F7;
     transform: translateY(-5px);
 }
+/*---------------------------------------cursos-------------------------------------*/
 .cursos{
     position: absolute;
-    height: 180px;
-    width: 100%;
-    left: -100%;
+    height: 190px;
+    width: 0;
     background-color: #EEE6FF;
     z-index: -10;
     top: 80px;
@@ -190,7 +144,14 @@ nav{
 }
 .cursos.activec{
     opacity: 1;
-    left: 0;
+    width: 100%;
+}
+.flex-curso{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    justify-content: center;
 }
 .curso-a{
     border: 1px solid #A98CFD;
@@ -213,10 +174,117 @@ nav{
     background-color: #F6F2F7;
     transform: translateY(-5px);
 }
-.flex-curso{
-    display: flex;
+/*-----------------------------------titulo-----------------------------*/
+.titulo-container{
     width: 100%;
-    height: 100%;
-    gap: 15px;
+    height: 160px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #CC7CFB;
+}
+.titulo{
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: fantasy;
+    color: #A458D0;
+    font-family: 'Volkhov', serif;
+}
+.subtitulo-c{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.subtitulo{
+    width: 450px;
+    height: 100%;
+    text-align: center;
+    border-bottom: 7px solid #CC7CFB;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: #A458D0;
+}
+.subtitulo:hover{
+    text-decoration: underline;
+}/*---------------------------------img-------------------------------------------------*/
+.img-c{
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/*----------------------------------------------Grid----------------------------------------*/
+.grid-container{
+    width: 100%;
+    height: 400px;
+    border: 1px #8E53C1;
+    display: flex;
+    justify-content: center;
+}
+.container-grid{
+    width: 900px;
+}
+.titulo-grid{
+    color: #B784B1;
+}
+.h2-grid{
+    font-size: 40px;
+    border-bottom: 7px solid #CC7CFB;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "c1 c2"
+    "c3 c4"
+    "c5 c6"
+}
+.cajas{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+    font-size: 22px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.cajas:hover{
+    box-shadow: 0 0 10px #888;
+    background-color: #eee;
+}
+.cajas i{
+    color: #CF7CFF;
+}
+.caja-grid{
+    text-decoration: none;
+    color: #444;
+    letter-spacing: 1px;
+}
+.caja-1{
+    grid-area: c1;
+}
+.caja-2{
+    grid-area: c2;
+}
+.caja-3{
+    grid-area: c3;
+}
+.caja-4{
+   grid-area: c4; 
+}
+.caja-5{
+   grid-area: c5; 
+}
+.caja-6{
+   grid-area: c6; 
 }
