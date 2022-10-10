@@ -1,27 +1,33 @@
 import os
-with open("UX_templates/carrera_template.html", "r") as file:
-    content = file.read()
-with open("UX_templates/template_style.css", "r") as file:
-    css = file.read()
+import pandas
 
-info = ["Arquitectura", "UADE", "no hay imagen", "5 AÑOS", "CABA", "Privada", "Arquitecto/a", "Mañana y tarde", "Presencial", "https://www.uade.edu.ar/facultad-de-arquitectura-y-diseno/arquitectura", "../../css/footerHeader.css", "../template_style.css"]
+infoCarreras = []
 
-content = content.replace("{nombreCarrera}", info[0])
-content = content.replace("{nombreFacultad}", info[1])
-content = content.replace("{imagen}", info[2])
-content = content.replace("{duracion}", info[3])
-content = content.replace("{ubicacion}", info[4])
-content = content.replace("{publicoPrivado}", info[5])
-content = content.replace("{titulo}", info[6])
-content = content.replace("{turnos}", info[7])
-content = content.replace("{modalidad}", info[8])
-content = content.replace("{linkPag}", info[9])
-content = content.replace("{cssFooterHeader}", info[10])
-content = content.replace("{cssTemplate}", info[11])
+data = pandas.read_csv("csvARQyDIS.csv")
+for i in data.iterrows():
+    infoCarreras.append(i[1].array)
 
 if os.path.isdir("../paginasTerminadas") == False:
     os.mkdir("../paginasTerminadas")
 
-with open("UX_templates/paginasTerminadas/" +info[0] + "_" + info[1] + ".html", "w") as file:
-    file.write(content)
-    print("Pagina creada")
+for x in infoCarreras:
+    with open("UX_templates/carrera_template.html", "r") as file:
+        content = file.read()
+    carrera = [x[2], x[3], "no hay imagen", x[4], x[5], x[6], x[9], x[8], x[9], x[10], "../../css/footerHeader.css", "../template_style.css", x[0]]
+    content = content.replace("{codigo}", x[0])
+    content = content.replace("{nombreCarrera}", x[2])
+    content = content.replace("{nombreFacultad}", x[3])
+    content = content.replace("{imagen}", "no hay imagen")
+    content = content.replace("{duracion}", x[4])
+    content = content.replace("{ubicacion}", x[5])
+    content = content.replace("{publicoPrivado}", x[6])
+    content = content.replace("{titulo}", x[7])
+    content = content.replace("{turnos}", x[8])
+    content = content.replace("{modalidad}", x[9])
+    content = content.replace("{linkPag}", x[10])
+    content = content.replace("{cssFooterHeader}", "../../css/footerHeader.css")
+    content = content.replace("{cssTemplate}", "../template_style.css")
+
+    with open("UX_templates/paginasTerminadas/" + x[0] + ".html", "w") as file:
+        file.write(content)
+        print(f"Pagina de {x[0]} creada")
