@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body {
+    background-color: #FCE4FF;
+}
 nav{
     width: 100%;
     display: flex;
@@ -177,7 +180,7 @@ nav{
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 830px;
+    height: 500px;
     z-index: -20;
 }
 .slider ul{
@@ -266,23 +269,51 @@ nav{
     font-size: 1.8rem;
     margin-left: 9rem;
     margin-right: 9rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-top: 9rem;
+    padding-top: 4.2rem;
     padding-bottom: 1rem;
     line-height: 1.5;
-    height: 35rem;
+    height: 25rem;
   }
 .flecha {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: auto;
     height: 8rem;
     width: 16rem;
 }
-  
+.fotoCarrusel {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.botonCarreras {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #FCE4FF; 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Helvetica', sans-serif; 
+    border-radius: 50px; 
+    }
+#divCarrera {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
