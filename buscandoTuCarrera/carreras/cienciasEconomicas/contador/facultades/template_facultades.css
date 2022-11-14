@@ -1,0 +1,50 @@
+.titulo {
+  background-color: #FCE4FF;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+  height: 35rem;
+}
+h1{
+    font-family: "Quicksand" , sans-serif;
+}
+
+.flecha {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding: auto;
+  height: 8rem;
+  width: 16rem;
+}
+
+.main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+.facuImg {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 50rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+body {
+    background-color: #FCE4FF;
+}
