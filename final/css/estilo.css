@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #FCE4FF;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    background-color: #F2E6F8;
+    height: 80px;
+    z-index: 100;
+    box-shadow: 0 8px 10px #444;
+}
+.logo{
+    width: 90px;
+    height: 70px;
+    margin-left: 20px;
+}
+.lista{
+    display: flex;
+    align-items: center;
+}
+.lista ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 20px;
+    transition: all .4s;
+}
+.lista ul li a{
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 1px;
+    font-size: 18px;
+    position: relative;
+
+}
+.lista ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 3px;
+    background-color: #8260B7;
+    transition: all .4s;
+}
+.lista ul li:hover{
+    transform: scale(1.1);
+}
+.lista ul li a:hover::before{
+    width: 100%;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 35px;
+    width: 190px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+}
+.buscar{
+    border: 2px solid #C6A5EC;
+    padding: 6px 13px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition-duration: .3s;
+}
+.buscar:hover{
+    background-color: #D6BEF5;
+    border: 2px solid #D6BEF5;
+}
+/*----------------------------------------------------Info----------------------------------------*/
+.info{
+    position: absolute;
+    height: 190px;
+    width: 100%;
+    left: -100%;
+    background-color: #EEE6FF;
+    z-index: -10;
+    top: 80px;
+    transition: all .5s;
+    opacity: 0;
+    border-bottom: 1px solid #999;
+}
+.info.active{
+    opacity: 1;
+    left: 0;
+}
+.flex-info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+.areas{
+    border: 1px solid #A98CFD;
+    width: 300px;
+    height: 150px;
+    margin-top: 5px;
+    border-bottom: 10px solid #6068B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9C83D4;
+    letter-spacing: 1px;
+    font-size: 18px;
+    background-color: #F1E6FA;
+    transition-duration: .6s;
+    text-align: center;
+    box-shadow: 5px 5px 10px #888;
+}
+.areas:hover{
+    background-color: #F6F2F7;
+    transform: translateY(-5px);
+}
+/*---------------------------------------cursos-------------------------------------*/
+.cursos{
+    position: absolute;
+    height: 190px;
+    width: 100%;
+    left: -100%;
+    background-color: #EEE6FF;
+    z-index: -10;
+    top: 80px;
+    transition: all .5s;
+    opacity: 0;
+    border-bottom: 1px solid #999;
+}
+.cursos.activec{
+    opacity: 1;
+    left: 0;
+}
+.flex-curso{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+.curso-a{
+    border: 1px solid #A98CFD;
+    width: 300px;
+    height: 150px;
+    margin-top: 5px;
+    border-bottom: 10px solid #6068B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9C83D4;
+    letter-spacing: 1px;
+    font-size: 18px;
+    background-color: #F1E6FA;
+    transition-duration: .6s;
+    box-shadow: 5px 5px 10px #888;
+}
+.curso-a:hover{
+    background-color: #F6F2F7;
+    transform: translateY(-5px);
+}
+/*-------------------------------------------Slider--------------------------------------------*/
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    z-index: -20;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 15s infinite alternate;
+}
+.slider li{
+    list-style: none;
+}
+.slidr img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/*-----------------------------------------------------Footer------------------------------------------*/
+
+
+/*---------------------------------------Responsive------------------------*/
+@media (max-width: 1200px){
+
+.logo{
+    width: 65px;
+    height: 45px;
+    margin-left: 10px;
+}
+.lista ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 20px;
+    transition: all .4s;
+}
+.lista ul li a{
+    color: #111;
+    font-size: 16px;
+    position: relative;
+
+}
+.search input{
+    height: 30px;
+    width: 170px;
+    font-size: 16px;
+}
+.buscar{
+    padding: 4px 9px;
+    font-size: 16px;
+
+}
+.info{
+    height: 180px;
+}
+.areas{
+    width: 300px;
+    height: 150px;
+    color: #9C83D4;
+    font-size: 14px;
+}
+.cursos{
+    height: 180px;
+}
+
+.curso-a{
+    width: 300px;
+    height: 150px;
+    font-style: 14px;
+}
+
+
+}
+.titulo {
+    background-color: #FCE4FF;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4.2rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    height: 25rem;
+  }
+.flecha {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding: auto;
+    height: 8rem;
+    width: 16rem;
+}
+.fotoCarrusel {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.botonCarreras {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #FCE4FF; 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Helvetica', sans-serif; 
+    border-radius: 50px; 
+    }
+#divCarrera {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

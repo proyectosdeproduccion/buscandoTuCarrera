@@ -1,0 +1,108 @@
+h1 {
+  font-weight: 100;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-size: 6.25rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h2 {
+  text-align: left;
+  font-weight: 40;
+  font-size: 1.875rem;
+  color: #ffffff;
+}
+
+h3 {
+  text-align: center;
+  width: 6.25rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.icons {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.images_icons {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.sub_icons {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.imagenTitulo {
+  width: 1200px;
+  height: auto;
+  margin:4rem auto;
+  margin-bottom: 8rem;
+	display:block;
+}
+
+.main_container {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+
+#carrera_info {
+  line-height: 1.25rem;
+  margin-right: 3.75rem;
+  margin-left: 3.75rem;
+  padding-left: 4.375rem;
+  padding-top: 0.625rem;
+  padding-right: 4.375rem;
+  padding-bottom: 0.625rem;
+  background-color: #a743d8;
+  color: #ffffff;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+#de_que_trata {
+  line-height: 1.25rem;
+  padding-top: 2.18rem;
+  padding-left: 4.375rem;
+  padding-right: 4.375rem;
+  padding-bottom: 2.18rem;
+  margin-bottom: 3.75rem;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+  background-color: #ebd2f7;
+
+}
+
+#linkCarrera{
+  text-align: center;
+  color: #a743d8;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+#ultimoParrafo{
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.titulo_trata {
+
+  color: #a743d8;
+}
+.titulo_info {
+  color: white;
+  text-align: center;
+}
